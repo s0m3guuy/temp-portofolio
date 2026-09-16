@@ -1,0 +1,119 @@
+body{
+    background-image: url("bg1.jpg");
+    background-size: 100% 930px;
+    background-repeat:no-repeat ;
+    background-color:rgb(0, 0, 0)!important; 
+}
+
+table, th, td {
+    border-radius: 20px;
+}
+
+td{
+    font-size:24px; 
+    font-family: 'Poppins', 'Nunito', sans-serif;
+}
+
+.full{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 4%;
+    /*background-color : rgba(82, 82, 82, 0.8);
+    border: 1px solid black;
+    border-radius: 20px;*/
+}
+
+legend{
+    text-align: left;
+}
+.navbar{
+    background-color: black;
+}
+.nav-link{
+    background-color:rgb(43, 43, 43); 
+    border-radius:50px; 
+    margin-right: 20px;
+}
+.nav-link:hover{
+    background-color: rgb(116, 115, 115);
+    scale:calc(1.1)
+}
+.btn-login{
+    border-radius:50px !important;
+    background-color:white;
+    color: rgb(116, 115, 115);
+    font-weight: bold !important;
+}
+
+.btn-register{
+    border-radius:50px;
+    color:rgba(146, 146, 146, 1);
+    background-color: transparent !important;
+    font-weight: bold !important;
+}
+
+.inbox{
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+}
+.cords{
+    margin:250px;
+    text-align: center;
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    margin-top: 700px;
+    background-color: rgb(0, 0, 0) !important;
+}
+.cardos{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin:50px ;
+    color: white!important;
+}
+.card-body{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.card-body:hover{
+    background-color: rgba(43, 43, 43, 0.8);
+    scale: calc(1.1);
+}
+.mb-3{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.card-text{
+    color: rgb(128, 128, 128) !important;
+    text-align: left;
+}
+.btn-hover{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;       
+    pointer-events: none;  
+    transition: 0.3s;
+    margin-left:60px ;
+    margin-bottom:130px; 
+    width: 50px;      
+    height: 50px;   
+    border-radius: 50%; 
+    overflow: hidden;  
+    padding: 0;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 218, 87, 1) !important;
+    border-color: rgba(5, 218, 87, 1) !important;
+}
+.card-body:hover .btn-hover{
+    opacity: 1;
+    pointer-events: auto; 
+}
+.btn-hover img {
+    width: 60%;       
+    height: 60%;
+    object-fit: contain;
+}

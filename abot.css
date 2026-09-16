@@ -1,0 +1,85 @@
+body{
+    text-align: center;       
+}
+
+table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cyan;
+}
+
+.full{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 4%;
+    background-color : rgb(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+legend{
+    text-align: left;
+}
+.navbar{
+    background-color: black;
+}
+.nav-link{
+    background-color:rgb(43, 43, 43); 
+    border-radius:50px; 
+    margin-right: 20px;
+}
+.nav-link:hover{
+    background-color: rgb(116, 115, 115);
+    scale:calc(1.1)
+}
+.btn-login{
+    border-radius:50px !important;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-weight: bold !important;
+}
+
+.btn-register{
+    border-radius:50px;
+    background-color:black;
+    color:rgb(255, 255, 255);
+    font-weight: bold !important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.box {
+    margin-top: 100px;
+    margin-bottom:80px;
+    width: 150px;
+    height: 150px;
+    /*background-color: lightgray;
+    border: 2px solid black;*/
+}
+.box:nth-child(1) {
+    width: 550px;
+    height: 200px;
+}
+.box:nth-child(2){
+    width: 550px;
+    height: 200px;
+    margin-left: 100px;
+}
+.box:nth-child(3){
+    
+    width: 550px;
+    margin-bottom:300px;
+}
+.box:nth-child(5) {
+  grid-column: 1 / 2;
+  width: 550px;
+  justify-self: start;
+}
+.link{
+    color: rgb(0, 180, 0) !important;
+}

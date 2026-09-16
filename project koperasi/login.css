@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('autumn.avif');
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.base {
+    width: 60%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.title {
+    flex: 1;
+    background-color: rgba(236, 134, 0, 0.57);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.title h2 {
+    color: black;
+    font-size: 2rem;
+}
+
+.container {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    padding: 40px;
+    font-size: 25px;
+    color: rgba(236, 134, 0);
+}
+
+input[name=username],
+input[name=password] {
+    width: 100%;
+    padding: 12px 0;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgba(236, 134, 0, 0.7);
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgba(236, 134, 0, 1);
+}
+
+/* Error message */
+.alert {
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* ── TABLET (max 992px) ── */
+@media (max-width: 992px) {
+    .base {
+        width: 80%;
+    }
+
+    .title {
+        padding-left: 25px;
+    }
+
+    .title h2 {
+        font-size: 1.6rem;
+    }
+
+    form {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    input[name=username],
+    input[name=password] {
+        font-size: 17px;
+    }
+}
+
+/* ── MOBILE (max 768px) ── */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    .base {
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column; /* stack title on top of form */
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .title {
+        flex: none;
+        width: 100%;
+        padding: 30px 25px;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .container {
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    form {
+        padding: 30px 25px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    input[name=username],
+    input[name=password] {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+}
+
+/* ── SMALL PHONES (max 480px) ── */
+@media (max-width: 480px) {
+    .title {
+        padding: 25px 20px;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 25px 20px;
+        font-size: 16px;
+    }
+
+    input[name=username],
+    input[name=password] {
+        font-size: 15px;
+    }
+}
